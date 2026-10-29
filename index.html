@@ -1,35 +1,29 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang='id'>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Praktikum 1 - Scene Pertama</title>
-  <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
-</head>
-<body>
-  <a-scene>
-    <a-box position="0 0.5 -3" rotation="0 45 0" color="#FF7043"></a-box>
-
-    <a-sphere position="-2 1.25 -4" radius="1.25" color="#FFEE58"></a-sphere>
-
-    <a-cylinder position="1.5 0.75 -3" radius="0.5" height="1.5"
-               color="#26C6DA"></a-cylinder>
-
-    <a-cone position="3.5 0.8 -4.5" radius-bottom="0.8" radius-top="0" height="1.6"
-            color="#AB47BC"></a-cone>
-
-    <a-torus position="0 2.2 -3" radius="0.7" radius-tubular="0.15"
-             color="#66BB6A"
-             animation="property: rotation; to: 0 360 0; loop: true; dur: 6000; easing: linear"></a-torus>
-             
-    <a-text value="Muhammad Dzaky Aulia&#10;NPM 2309020319"
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<title>Praktikum AVR - Pertemuan 3</title>
+<style>
+  body { margin: 0; overflow: hidden; font-family: sans-serif; }
+  #log { position: fixed; top: 8px; left: 8px; right: 8px; color: #fff;
+         font-size: 13px; pointer-events: none; }
+</style>
+<script type='importmap'>
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+  }
+}
+</script>
+<scene><a-text value="Muhammad Dzaky Aulia&#10;NPM 2309020319"
             position="0 5 -5" align="center" width="8"
             color="#FFFFFF"></a-text>
-            
-    <a-plane position="0 0 -4" rotation="-90 0 0" width="12" height="12"
-             color="#E8C07D"></a-plane>
-             
-    <a-sky color="#1B2A49"></a-sky>
-  </a-scene>
+          </scene>
+</head>
+<body>
+<div id='log'>Log interaksi akan tampil di sini</div>
+<script type='module' src='main.js'></script>
 </body>
 </html>
